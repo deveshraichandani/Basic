@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div style="background-color:red;">
+        <h1 id="first">Hi</h1>
+    </div>
+    <!-- <div style="background-color:rgb(18, 169, 149); ">
+        <h2 id="second">water</h2>
+    </div> -->
+</body>
+<script>
+    let h1ele = document.getElementById("first")
+    let h2ele = document.getElementById("second")
+
+    setTimeout(() => {
+        h1ele.innerHTML = "I'm Devesh"
+        h1ele.style['color'] = 'lime'
+    }, 1500)
+    
+    setTimeout(() => {
+        h1ele.style['color'] = 'indigo'
+        h1ele.style['text-decoration'] = 'underline'
+        h1ele.innerHTML = "I'm learning"
+    }, 3000)
+    
+    setTimeout(() => {
+        h1ele.style['color'] = 'yellow'
+        h1ele.style['text-decoration'] = 'none'
+        h1ele.style['font-size'] = '5rem'
+        h1ele.innerHTML = "Web Programming"
+    }, 4500)
+    
+</script>
+
+</html>
